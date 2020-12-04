@@ -55,6 +55,31 @@ html {
 /*	background-color: gray;*/
 	float: right;
 }
+.menu .icon{
+	display: none;
+}
+@media screen and (max-width:414px){
+	.menu .icon{
+		display:block;
+	}
+	.menu ul{
+		visibility: visible;
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100vh;
+		background: #7A04BB;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		z-index: 1000;
+		
+	} 
+	
+	
+}
 .menu ul{
 	list-style: none;
 	text-align: right;
@@ -103,7 +128,7 @@ html {
 .banner .bg-banner {
 	width:100%;
 /*	position: absolute;*/
-	z-index: 1;
+/*	z-index: 1;*/
 /*	background-color:orange;*/
 }
 .bg-banner img{
@@ -116,7 +141,7 @@ html {
 	position: absolute;
 	right:2%;
 	top:20%;
-	z-index: 3;
+/*	z-index: 3;*/
 /*	padding-top: 50px;*/
 	box-sizing: border-box;
 	text-align: center;
@@ -462,7 +487,7 @@ article{
 }
 .i img:active{
 	transform: scale(1.8);
-	z-index: 6;
+/*	z-index: 6;*/
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .i img{
@@ -578,7 +603,7 @@ article{
 table{
 	width:38%;
 /*	background-color: yellow;*/
-	z-index: 100;
+/*	z-index: 100;*/
 	display: flex;
 	position: absolute;
 	top:10%;
